@@ -37,6 +37,9 @@ fun main3(): Unit = runBlocking<Unit> {
 fun main4() = runBlocking {
     val job = GlobalScope.launch {
         delay(1000L)
+        launch {
+
+        }
     }
     job.join()
 }

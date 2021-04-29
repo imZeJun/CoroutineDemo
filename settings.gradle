@@ -1,4 +1,2 @@
-include ':lib_generic'
-include ':lib-generic'
 include ':app'
 rootProject.name='CoroutineDemo'
