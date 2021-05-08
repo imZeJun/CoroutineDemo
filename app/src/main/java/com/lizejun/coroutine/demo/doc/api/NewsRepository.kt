@@ -1,6 +1,5 @@
 package com.lizejun.coroutine.demo.doc.api
 
-import com.lizejun.coroutine.demo.doc.converter.BaseConverterFactory
 import com.lizejun.coroutine.demo.doc.data.BaseResult
 import com.lizejun.coroutine.demo.doc.data.NewsItem
 import okhttp3.OkHttpClient
@@ -15,7 +14,6 @@ class NewsRepository private constructor() {
 
     private val newsApi by lazy {
         Retrofit.Builder()
-            .addConverterFactory(create())
             .addConverterFactory(MoshiConverterFactory.create())
             .baseUrl("https://gank.io")
             .client(client)
